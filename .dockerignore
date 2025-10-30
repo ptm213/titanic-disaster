@@ -1,0 +1,35 @@
+# --------------------------------------------------------
+# Keep DATA OUT of the image (assignment requires this).
+# We'll mount data at runtime or set DATA_DIR instead.
+# --------------------------------------------------------
+src/data/
+data/
+
+# --------------------------------------------------------
+# Python build/cache artifacts — not needed in the image
+# --------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local virtual envs
+.venv/
+venv/
+
+# Jupyter checkpoints (if you use notebooks later)
+.ipynb_checkpoints/
+
+# --------------------------------------------------------
+# VCS + editor noise — keep images clean and small
+# --------------------------------------------------------
+.git
+.gitignore
+.gitattributes
+.DS_Store
+
+# VS Code workspace files (optional)
+.vscode/
+
+# Env/config files you don’t want baked into images (optional)
+.env
