@@ -1,0 +1,20 @@
+# OS cruft
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# R
+.Rhistory
+.Rproj.user/
+
+# Data (don’t commit datasets)
+data/
+src/**/data/
+
+# Notebooks’ checkpoints (if any)
+.ipynb_checkpoints/
