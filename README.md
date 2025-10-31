@@ -1,12 +1,9 @@
 # Titanic – Reproducible Logistic Regression (Python & R)
 This is ptm213's submission for MLDS400 homework #3.
 
-It contains Dockerized two logistic regression models (Python and R) that generate predictions for titanic passenger survival.
+It contains two Dockerized logistic regression models (Python and R) that generate predictions for titanic passenger survival.
 
-Anyone can use this repo to download the titanic-disaster data and run the logistic regression models for themselves. Here's how:
-
-This repo contains Dockerized Python **and** R baselines that predict Titanic survival.  
-No datasets are committed; follow the steps below to run reproducibly.
+Anyone can use this repo to download the titanic-disaster data and run the logistic regression models for themselves. No datasets are committed; follow the steps below to run reproducibly.
 
 ## Requirements
 - Docker Desktop (Linux/macOS/Windows)
@@ -21,10 +18,11 @@ cd titanic-disaster
 ## 1) Download the data
 Download three data sets from [Kaggle (Titanic)](https://www.kaggle.com/competitions/titanic/data).
 
-Place all three files in src/data/:
+Create src/data/ folder and upload all three files:
 1. src/data/train.csv
 2. src/data/test.csv
 3. src/data/gender_submission.csv
+
 Note: Data is ignored by .gitignore and not baked into images via .dockerignore.
 
 
