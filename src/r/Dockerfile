@@ -11,18 +11,15 @@ FROM r-base:4.3.3
 WORKDIR /app 
 
 # Install R packages separately for better build caching
-# COPY install_packages.R /app/install_packages.R
 COPY src/r/install_packages.R /app/install_packages.R
 
 # RUN Rscript install_packages.R
 RUN Rscript /app/install_packages.R
 
 # Copy your R script
-# COPY main.R /app/main.R
 COPY src/r/main.R /app/main.R
 
 # Point your script to data via env var (mount at /data when running)
 ENV DATA_DIR=/data
 
-# CMD ["Rscript", "main.R"]
 CMD ["Rscript","/app/main.R"]
