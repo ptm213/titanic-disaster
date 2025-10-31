@@ -16,7 +16,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 WORKDIR /app
 
 # Copy the requirements file from your repo into the image.
-COPY requirements.txt /app/requirements.txt
+COPY src/python/requirements.txt /app/requirements.txt
 
 # Install the required Python packages.
 RUN pip install --no-cache-dir -r requirements.txt
