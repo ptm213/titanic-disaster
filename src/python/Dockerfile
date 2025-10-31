@@ -19,7 +19,7 @@ WORKDIR /app
 COPY src/python/requirements.txt /app/requirements.txt
 
 # Install the required Python packages.
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
 # Copy your source code folder into the image.
 COPY src /app/src
