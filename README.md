@@ -53,13 +53,13 @@ Run docker image (Windows PowerShell) with
 
 `docker run --rm -it -e DATA_DIR=/data -v "${PWD}\src\data:/data" titanic-r`
 
-What you’ll see:
+## What you’ll see:
 - Printed steps: load → preview → missing values → model fit → training accuracy → test predictions.
 - Files written (if PassengerId exists):
     - Python: src/data/submission.csv
     - R: src/data/submission_r.csv
 
-Troubleshooting
+## Troubleshooting
 - Cache error during build:
     - `docker build --no-cache -t titanic-r -f src/r/Dockerfile .`
     - or `docker builder prune -af` then rebuild.
