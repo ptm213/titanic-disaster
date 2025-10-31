@@ -21,6 +21,7 @@ Build docker image with
 `docker build -t titanic-py -f src/python/Dockerfile .`
 
 Run docker image with
+
 `docker run --rm -it -e DATA_DIR=/data -v "$PWD/src/data:/data" titanic-py`
 
 
